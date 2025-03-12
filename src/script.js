@@ -1,7 +1,8 @@
 let count = document.getElementById("count");
 
 document.getElementById("increment").addEventListener("click", function() {
-    count.innerText + 1; // BUG 3: Não está atribuindo o novo valor
+    let currentValue = parseInt(count.innerText);
+    count.innerText = currentValue + 1;
 });
 
 document.getElementById("decrement").onclick = function() {
